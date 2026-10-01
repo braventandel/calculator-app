@@ -5,11 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <div id="calculator">
+        <div id="display"></div>
+        <div id="buttons">
+            <div id="btn_r1" class="row"></div>
+            <div id="btn_r2" class="row"></div>
+            <div id="btn_r3" class="row"></div>
+            <div id="btn_r4" class="row"></div>
+            <div id="btn_r5" class="row"></div>
+            <div id="btn_r6" class="row"></div>
+        </div>
+        <div id="keyboard"></div>
+    </div>
+
     <script>
+
+        //Basic Math Functions
         const add = function (a, b) {
             return a + b;
         }
@@ -26,6 +42,7 @@
             return a / b;
         }
 
+        //Operate Function
         const operate = function (operator, num1, num2) {
             switch (operator) {
                 case '+':
